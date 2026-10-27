@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head><title>Deals</title></head>
+<body>
+<main>
+  <!-- Hero offer: has a description body. -->
+  <div class="xpr-promoCard">
+    <div class="xpr-promoCard__content">
+      <span class="xpr-promoCard__eyebrow">APPLE</span>
+      <h3 class="xpr-promoCard__title">All-New <span>Phone Duo</span>. Yours for $1000 off.</h3>
+      <div class="xpr-promoCard__body">
+        <p>Save $1000 when you switch and bring your number.</p>
+        <p>With up to 36 monthly bill credits.</p>
+      </div>
+      <div class="xpr-promoCard__ctas">
+        <a href="https://www.t-mobile.com/cell-phone/phone-duo?icid=TRACKING123">Reserve yours</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card with no title: not an offer, skipped. -->
+  <div class="xpr-promoCard">
+    <div class="xpr-promoCard__ctas"><a href="/cell-phone/ghost">Shop now</a></div>
+  </div>
+
+  <!-- Card with no call-to-action link: skipped. -->
+  <div class="xpr-promoCard">
+    <h3 class="xpr-promoCard__title">No link anywhere</h3>
+  </div>
+
+  <div class="xpr-cardContainer">
+    <div class="xpr-cardContainer__headline">Phone deals.</div>
+    <!-- No description body on section cards: description stays empty. -->
+    <div class="xpr-promoCard">
+      <h3 class="xpr-promoCard__title">Galaxy S26+ On Us.</h3>
+      <div class="xpr-promoCard__ctas">
+        <a href="/cell-phone/samsung-galaxy-s26-plus?INTNAV=tNav%3ADeals">Shop now</a>
+      </div>
+    </div>
+    <!-- Same URL as the hero card after tracking params are stripped: deduped. -->
+    <div class="xpr-promoCard">
+      <h3 class="xpr-promoCard__title">Phone Duo, again</h3>
+      <div class="xpr-promoCard__ctas">
+        <a href="https://www.t-mobile.com/cell-phone/phone-duo?icid=OTHER">Shop now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="xpr-cardContainer">
+    <div class="xpr-cardContainer__headline">Smartwatch deals.</div>
+    <!-- Brand keywords must not override the device-type URL segment. -->
+    <div class="xpr-promoCard">
+      <h3 class="xpr-promoCard__title">Limited time: $99 Galaxy Watch Ultra2.</h3>
+      <div class="xpr-promoCard__ctas">
+        <a href="/smart-watch/samsung-galaxy-watch-ultra2">Shop now</a>
+      </div>
+    </div>
+    <div class="xpr-promoCard">
+      <h3 class="xpr-promoCard__title">Introducing the new moto pad.</h3>
+      <div class="xpr-promoCard__ctas">
+        <a href="/tablet/motorola-moto-pad-2026">Shop now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="xpr-cardContainer">
+    <div class="xpr-cardContainer__headline">Accessories deals.</div>
+    <div class="xpr-promoCard">
+      <h3 class="xpr-promoCard__title">Buy 3 or more iPhone accessories and save 25% today.</h3>
+      <div class="xpr-promoCard__ctas">
+        <a href="/accessories/featured/ios-essential-accessories">Shop now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation tiles, not offers: parsing stops at this heading. -->
+  <h2>Explore T-Mobile</h2>
+  <div class="xpr-promoCard">
+    <h3 class="xpr-promoCard__title">HOME INTERNET</h3>
+    <div class="xpr-promoCard__ctas"><a href="/home-internet">Learn more</a></div>
+  </div>
+</main>
+</body>
+</html>
